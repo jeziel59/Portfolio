@@ -1,0 +1,67 @@
+@charset "UTF-8";
+    @media screen and (min-width:992px) {
+        header {
+            height: 200px;
+            width: 950px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        main > section aside.aside1 {
+            display: block;
+        }
+        header > nav.flex-box {
+            display: flex;
+        }
+        header > section > h1 {
+            font-size: 90px;
+        }
+        main > section.sec1 {
+            height: 860px;
+            width: 970px;
+            padding-left: 10px;
+            margin-top: 70px;
+        }
+        main > section > article.article1 {
+            height: 400px;
+            width: 700px;
+            float: left;
+            margin-bottom: 20px;
+        }
+        main > section > article > img#imgpessoal {
+            height: 280px;
+            width: 400px;
+            margin-left: 20px;
+            margin-top: 40px;
+            position: absolute;
+            border-radius: 20px;
+        }
+        main > section > article > h1 {
+            font-size: 70px;
+            margin-top: 280px;
+            margin-left: 200px;
+            position: absolute;
+        }
+        main > section > article > p {
+            margin-left: 450px;
+            margin-top: 40px;
+            max-width: 240px;
+            text-align: justify;
+            background-color: #ffffffa4;
+        }
+
+        main > section > article > div.container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        #item1 {
+            grid-column: 1 / span 2;
+        }
+        #item2 {
+            grid-column: 3 / span 4;
+        }
+        #item3 {
+            grid-column: 1 / span 2;
+        }
+        #item4 {
+            grid-column: 3 / span 4;
+        }
+    }
