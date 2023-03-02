@@ -2,10 +2,10 @@
     @media screen and (min-width:0px) {
     @font-face {
         font-family: fonteh1;
-        src: url(fontes/SimpleThread_PERSONAL_USE_ONLY.otf);}
+        src: url(../Principal/fontes/SimpleThread_PERSONAL_USE_ONLY.otf);}
         @font-face {
             font-family: fontep;
-            src: url(fontes/Sansation_Regular.ttf);
+            src: url(../Principal/fontes/Sansation_Regular.ttf);
         }
 * {
     margin: 0px;

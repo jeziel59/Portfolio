@@ -9,8 +9,33 @@
         main > section aside.aside1 {
             display: block;
         }
+        header > span#menu {
+            display: none;
+
+        }
+        header > i#menu {
+            display: none;
+        }
         header > nav.flex-box {
             display: flex;
+            flex-direction: row;
+            background-color: #000000a4;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 5px 5px 0px 0px
+        }
+        header > nav > a > div.flex-item {
+            background-color: #363636;
+            color: rgb(202, 202, 202);
+            height: 30px;
+            width: 170px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px;
+            font-family: fontep;
         }
         header > section > h1 {
             font-size: 90px;
