@@ -7,21 +7,8 @@
             margin-top: 20px;
             transition: 0.2s;
         }
-        main > section aside.aside1 {
-            display: block;
-            height: 820px;
-            width: 200px;
-            background-color: rgb(84, 58, 179);
-            float: right;  
-            margin-right: 10px;
-            border-radius: 5px;
-        }
-        main > aside.aside2 {
-            display: none;
-        }
         header > span#menu {
             display: none;
-
         }
         header > i#menu {
             display: none;
@@ -44,6 +31,25 @@
         }
         header > section > h1 {
             font-size: 90px;
+        }
+        main > section aside.aside1 {
+            display: block;
+            height: 820px;
+            width: 200px;
+            background-image: url(../imagens/desktop.png);
+            float: right;  
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: inset 0px 0px 70px 0px var(--black);
+        }
+        aside > p {
+            height: 350px;
+            width: 180px;
+            margin-left: 12px;
+            margin-top: 460px;
+        }
+        main > aside.aside2 {
+            display: none;
         }
         main > section.sec1 {
             height: 860px;

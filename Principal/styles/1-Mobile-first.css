@@ -14,7 +14,7 @@
         --darkgray: #363636;
         --darkgray-t: #363636a4;
         --white: #ffffff;
-        --white-t: #ffffff79;
+        --white-t: #ffffffb6;
         --lightgray: #cacaca;
         --fonte-txt: sansation_regular;
         --font-titulo: simple_thread;
@@ -23,7 +23,6 @@
         * {
             margin: 0px;
             border: 0px;
-            padding: 0px;
             box-sizing: border-box;
         }
         body {
@@ -105,7 +104,7 @@
             transition: 0.2s;
         }
         main > section.sec1 {
-            height: 1370px;
+            height: 1335px;
             width: 330px;
             margin: auto;
             margin-top: 20px;
@@ -178,9 +177,32 @@
             height: 320px;
             width: 330px;
             margin: auto;
-            background-color: rgb(84, 58, 179);  
+            background-image: url(../imagens/phone.png); 
             border-radius: 5px;
             transition: 0.2s;
+            box-shadow: inset 0px 0px 70px 0px var(--black);
+            background-repeat: no-repeat;
+        }
+        aside > p {
+            background-color: var(--lightgray);
+            font-family: var(--fonte-txt);
+            padding: 10px;
+            height: 230px;
+            width: 300px;
+            border-radius: 20px;
+            position: absolute;
+            margin-left: 25px;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        aside > p > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--black);
+        }
+        aside > p > a > img.imglink {
+            height: 15px;
+            width: 15px;
         }
         footer {
                 height: 30px;

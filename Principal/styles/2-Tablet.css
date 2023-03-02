@@ -32,8 +32,13 @@
             transition: 0.2s;
         }
         main > aside.aside2 {
+            background-image: url(../imagens/tablet.png);
             height: 300px;
             width: 600px;
             transition: 0.2s;
+        }
+        aside > p {
+            margin-left: 285px;
+            margin-top: 10px;
         }
 }   
