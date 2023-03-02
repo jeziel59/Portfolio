@@ -5,9 +5,19 @@
             width: 950px;
             margin: auto;
             margin-top: 20px;
+            transition: 0.2s;
         }
         main > section aside.aside1 {
             display: block;
+            height: 820px;
+            width: 200px;
+            background-color: rgb(84, 58, 179);
+            float: right;  
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        main > aside.aside2 {
+            display: none;
         }
         header > span#menu {
             display: none;
@@ -15,11 +25,12 @@
         }
         header > i#menu {
             display: none;
+            transition: 0.2s;
         }
         header > nav.flex-box {
             display: flex;
             flex-direction: row;
-            background-color: #000000a4;
+            background-color: var(--black-t);
             height: 50px;
             justify-content: center;
             align-items: center;
@@ -28,14 +39,8 @@
             border-radius: 5px 5px 0px 0px
         }
         header > nav > a > div.flex-item {
-            background-color: #363636;
-            color: rgb(202, 202, 202);
             height: 30px;
             width: 170px;
-            border-radius: 5px;
-            text-align: center;
-            padding: 5px;
-            font-family: fontep;
         }
         header > section > h1 {
             font-size: 90px;
@@ -44,13 +49,17 @@
             height: 860px;
             width: 970px;
             padding-left: 10px;
-            margin-top: 70px;
+            margin-top: 30px;
+        }
+        header > section.head {
+            height: 160px;
         }
         main > section > article.article1 {
             height: 400px;
             width: 700px;
             float: left;
             margin-bottom: 20px;
+            transition: 0.2s;
         }
         main > section > article > img#imgpessoal {
             height: 280px;
@@ -59,23 +68,27 @@
             margin-top: 40px;
             position: absolute;
             border-radius: 20px;
+            transition: 0.2s;
         }
         main > section > article > h1 {
             font-size: 70px;
             margin-top: 280px;
             margin-left: 200px;
             position: absolute;
+            transition: 0.2s;
         }
         main > section > article > p {
             margin-left: 450px;
             margin-top: 40px;
             max-width: 240px;
             text-align: justify;
-            background-color: #ffffffa4;
+            background-color: var(--white-t);
+            transition: 0.2s;
         }
 
         main > section > article > div.container {
             grid-template-columns: repeat(4, 1fr);
+            transition: 0.2s;
         }
         #item1 {
             grid-column: 1 / span 2;

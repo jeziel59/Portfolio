@@ -1,0 +1,7 @@
+Mobile first
+totalmente responsivo; celular, tablet e desktop
+menu burguer para mobile
+cores e fontes em variaveis
+HTML semantico
+CSS descritiva 
+Fontes, imagens e CSS em pastas
