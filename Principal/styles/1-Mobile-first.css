@@ -158,6 +158,10 @@
         #item1 {
             background-color: rgb(0, 0, 0);
             border-radius: 5px 5px 0px 0px;
+            box-shadow: inset 0px 0px 50px 0px black;
+        }
+        #item1 img {
+            border-radius: 5px 5px 0px 0px;
         }
         #item2 {
             background-color: rgb(238, 255, 0);

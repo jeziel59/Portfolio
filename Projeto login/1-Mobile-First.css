@@ -18,17 +18,57 @@ body {
     height: 100vh;
 }
 section {
-    height: 520px;
-    width: 300px;
+    height: 570px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+div#info {
+    height: 30px;
+    width: 30px;
+    margin: 0px 20px 20px 0px;
+    background-image: url(imagens/info.png);
+    background-size: cover;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 20px;
+}
+#blockinfo {
+    height: 300px;
+    width: 250px;
+    background-image: url(imagens/phone01.png);
+    position: absolute;
+    margin-left: 50px;
+    display: none;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 70px 0px black;
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.9em;
+}
+#blockinfo a {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+#infotext {
+height: 200px;
+width: 200px;
+margin: auto;
+margin-top: 20px;
+background-color: #ffffff;
+padding: 8px;
+border-radius: 20px;
 }
 section > article#imglogin {
     height: 200px;
     width: 250px;
     background-color: rgb(201, 253, 80);
+    transition: 0.2s;
+
 }
 section > article#arealogin {
     height: 320px;
@@ -41,6 +81,7 @@ section > article#imglogin {
     background-position: top center;
     background-size: cover;
     border-radius: 40px 40px 0px 0px;
+    transition: 0.2s;
 }
 section > article h1 {
     text-align: center;
@@ -69,10 +110,10 @@ section > article > form > div.logindata {
     border-radius: 5px;
 }
 .iconlogin {
-    height: 40px;
+    height: 30px;
     margin-right: 5px;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 section > article > form > input#entrar {
     height: 30px;
@@ -90,10 +131,21 @@ section > article > form > input#entrar:hover {
     color: black;
     transition: 0.3s;
 }
-.opcoes {
+a {
+    text-decoration: none;
+    color: black;
+}
+section > article > form > div.opcoes1 {
+    margin: auto;
+    width: 170px;
+    height: 20px;
     cursor: pointer;
 }
-.opcoes:hover::after {
+section > article > form > div.opcoes1:hover {
+    background-color: #00e0a86e;
+    border-radius: 10px;
+}
+section > article > form > div > a > p.opcoes2:hover::after {
     content:""; 
     background-image: url("imagens/acess.png");
     width:20px;

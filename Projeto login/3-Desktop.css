@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 1024px)  {
+
+    section {
+        height: 500px;
+        width: 900px;
+        flex-direction: row;
+        transition: 0.2s;
+    }
+    section > article#imglogin {
+        height: 500px;
+        width: 400px;
+        background-color: rgb(201, 253, 80);
+        border-radius: 40px 0px 0px 40px ;
+        transition: 0.2s;
+    }
+    section > article#arealogin {
+        height: 500px;
+        width: 500px;
+        padding-top: 60px;
+        border-radius: 0px 40px 40px 0px ;
+        transition: 0.2s;
+    }
+    section > article#imglogin {
+        background-image: url(imagens/subway2.jpg);
+        background-position: bottom center;
+}
+}

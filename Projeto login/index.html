@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="1-Mobile-First.css">
-    <link rel="stylesheet" href="2-Tablet.css">
-    <link rel="stylesheet" href="3-Desktop">
+    <link rel="stylesheet" href="1-Mobile-First.css" media="screen">
+    <link rel="stylesheet" href="2-Tablet.css" media="screen">
+    <link rel="stylesheet" href="3-Desktop.css" media="screen">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
         
       </style>
     <title>Login</title>
 </head>
-<body>
+<body onresize="mudoutamanho()">
 <main>
     <section>
-        <article id="imglogin">
-
-        </article>
+        <div id="info" onclick="clickmenu()"></div>
+        <div id="blockinfo">
+            <div id="infotext"><p>Projeto login; <br>
+                Pagina responsiva organizada utilizando Flex-Box, Clique na opção “Cadastrar-se” para prosseguir para aproxima pagina. <br>
+                Você pode conferir aqui o <a href="#">CSS</a> e o <a href="">HTML</a> dessa pagina!
+                </p></div>
+        </div>
+        <article id="imglogin"></article>
         <article id="arealogin">
             <h1>Seja bem vindo(a)</h1>
             <p>Insira seu email e senha para continuar sua jornada!</p>
-            <form action="#" autocomplete="on">
+            <form action="cadastro.php" method="post" autocomplete="on">
                 <div class="logindata">
                     <label for="iemailbox"><img src="imagens/user.png" alt="" class="iconlogin">
                     <input type="email" name="emailbox" id="iemailbox" class="databox" autocomplete="email" placeholder="Email" required minlength="6" maxlength="30">
@@ -34,16 +39,24 @@
                     <input type="password" name="password" id="ipassword" class="databox" placeholder="Sua senha" required minlength="6" maxlength="10">
                 </div>
                 <input type="submit" value="Entrar"  id="entrar">
-                <div >
-                    <p class="opcoes">Cadastrar-se </p>
+                <div class="opcoes1">
+                    <a href="#"><p class="opcoes2">Cadastrar-se </p></a>
                 </div>
-                <div> 
-                    <p class="opcoes">Esqueci a senha </p>
+                <div class="opcoes1"> 
+                    <a href="#"><p class="opcoes2">Esqueci a senha </p></a>
                 </div>
             </form>
         </article>
     </section>
 </main>
-    
+<script>
+    function clickmenu() {
+    if (blockinfo.style.display == 'block') {
+              blockinfo.style.display = 'none' 
+            } else {
+               blockinfo.style.display = 'block'
+            }
+        }
+</script>
 </body>
 </html>
