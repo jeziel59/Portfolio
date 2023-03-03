@@ -206,14 +206,14 @@
             width: 15px;
         }
         footer {
-                height: 30px;
+                height: 20px;
                 background-color: var(--black-t);
                 margin: auto;
                 margin-top: 40px;
                 margin-bottom: 20px;
-                border-radius: 5px;
                 font-family: var(--fonte-txt);
-                color: var(--white);
                 text-align: center;
+                color: var(--white);
+
         }
     }

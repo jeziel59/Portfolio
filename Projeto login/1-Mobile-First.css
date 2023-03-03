@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --lightblue:#64D1F5;
+    --blue:#348CA8;
+    --lightyellow:#F5EC5E;
+    --darkyellow:#ffee00;
+    --pink:#F57D9D;
+}
+body {
+    background-image: linear-gradient(to bottom, #5044ff , #8a2be2);
+    width: 100vw;
+    height: 100vh;
+}
+section {
+    height: 520px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section > article#imglogin {
+    height: 200px;
+    width: 250px;
+    background-color: rgb(201, 253, 80);
+}
+section > article#arealogin {
+    height: 320px;
+    width: 250px;
+    background-color: white;
+    border-radius: 0px 0px 40px 40px ;
+}
+section > article#imglogin {
+    background-image: url(imagens/subway1.jpg);
+    background-position: top center;
+    background-size: cover;
+    border-radius: 40px 40px 0px 0px;
+}
+section > article h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 5px;
+    font-family: 'Mulish', sans-serif;
+}
+section > article p {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    font-family: 'Mulish', sans-serif;
+}
+section > article > form > div.logindata {
+    height: 50px;
+    width: 230px;
+    background-color: #00e0a8;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.databox {
+    position: absolute;
+    margin-top: 10px;
+    height: 30px;
+    width: 170px;
+    border-radius: 5px;
+}
+.iconlogin {
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+section > article > form > input#entrar {
+    height: 30px;
+    width: 150px;
+    margin-left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.486);
+}
+section > article > form > input#entrar:hover {
+    background-color: #00e0a8;
+    color: black;
+    transition: 0.3s;
+}
+.opcoes {
+    cursor: pointer;
+}
+.opcoes:hover::after {
+    content:""; 
+    background-image: url("imagens/acess.png");
+    width:20px;
+    height:20px;
+    background-size:20px 20px;
+    background-repeat: no-repeat;
+    position:absolute;
+}

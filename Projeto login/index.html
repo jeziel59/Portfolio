@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="1-Mobile-First.css">
+    <link rel="stylesheet" href="2-Tablet.css">
+    <link rel="stylesheet" href="3-Desktop">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+        
+      </style>
+    <title>Login</title>
+</head>
+<body>
+<main>
+    <section>
+        <article id="imglogin">
+
+        </article>
+        <article id="arealogin">
+            <h1>Seja bem vindo(a)</h1>
+            <p>Insira seu email e senha para continuar sua jornada!</p>
+            <form action="#" autocomplete="on">
+                <div class="logindata">
+                    <label for="iemailbox"><img src="imagens/user.png" alt="" class="iconlogin">
+                    <input type="email" name="emailbox" id="iemailbox" class="databox" autocomplete="email" placeholder="Email" required minlength="6" maxlength="30">
+                    </label>
+                </div>
+                <div class="logindata">
+                    <label for="ipassword"><img src="imagens/key.png" alt="" class="iconlogin"></label>
+                    <input type="password" name="password" id="ipassword" class="databox" placeholder="Sua senha" required minlength="6" maxlength="10">
+                </div>
+                <input type="submit" value="Entrar"  id="entrar">
+                <div >
+                    <p class="opcoes">Cadastrar-se </p>
+                </div>
+                <div> 
+                    <p class="opcoes">Esqueci a senha </p>
+                </div>
+            </form>
+        </article>
+    </section>
+</main>
+    
+</body>
+</html>

@@ -1,7 +1,13 @@
 Mobile first
-totalmente responsivo; celular, tablet e desktop
+Media Queries
 menu burguer para mobile
 cores e fontes em variaveis
 HTML semantico
 CSS descritiva 
 Fontes, imagens e CSS em pastas
+
+Projeto desenvolvido com conceito mobile first,
+Design responsivo com Media Queries e menu para mobile,
+Cores e fontes definidas em Variaveis,
+HTML semantico e CSS organizada e descritiva,
+arquivos organizados em pastas.
