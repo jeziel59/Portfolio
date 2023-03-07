@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --darkpurple:#5044ff;
+    --lightpurple:#8a2be2;
+    --lightgreen:#00e0a8;
+    --lightgreen-t:#00e0a86e;
+    --black: #000000;
+    --white: #ffffff;
+    --lightgray: #e4e4e4;
+}
+section#back-area {
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+    width: 345px;
+    background-color: var(--white);
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+} 
+.imgcad {
+    height: 200px;
+    width: 345px;
+    background-image: url(../imagens/subway1.jpg);
+    border-radius: 20px 20px 0px 0px;
+
+}
+p {
+    font-family: 'Mulish', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 5px;
+    font-family: 'Mulish', sans-serif;
+}
+div#cabecalho > h1 {
+    padding-top: 10px;
+}
+div#cabecalho > p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+body {
+    background-image: linear-gradient(to top, var(--darkpurple) , var(--lightpurple));
+    height: 100%;
+    
+}
+
+.flex-item {
+    background-color: var(--lightgreen);
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+}
+.input {
+    float: right;
+    margin-right: 10px;
+    height: 20px;
+    width: 180px;
+    border-radius: 5px;
+}
+.input2 {
+    display: block;
+    width: 90%;
+    margin-left: 10px;
+}
+section > form > div > p > label {
+    margin-left: 10px;
+}
+
+section > form > p {
+    margin-left: 10px;
+}
+.button {
+    height: 30px;
+    width: 150px;
+    margin: 10px 20px 20px 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.486);
+
+}
+.button:hover {
+    background-color: var(--lightgreen);
+    color: var(--black);
+    transition: 0.3s;
+}
+#fim {
+    height: 10px;
+    
+}
+

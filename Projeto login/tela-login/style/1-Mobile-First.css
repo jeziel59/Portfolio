@@ -6,14 +6,16 @@
     box-sizing: border-box;
 }
 :root {
-    --lightblue:#64D1F5;
-    --blue:#348CA8;
-    --lightyellow:#F5EC5E;
-    --darkyellow:#ffee00;
-    --pink:#F57D9D;
+    --darkpurple:#5044ff;
+    --lightpurple:#8a2be2;
+    --lightgreen:#00e0a8;
+    --lightgreen-t:#00e0a86e;
+    --black: #000000;
+    --white: #ffffff;
+    --lightgray: #e4e4e4;
 }
 body {
-    background-image: linear-gradient(to bottom, #5044ff , #8a2be2);
+    background-image: linear-gradient(to bottom, var(--darkpurple) , var(--lightpurple));
     width: 100vw;
     height: 100vh;
 }
@@ -27,6 +29,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.2s;
+
 }
 div#info {
     height: 30px;
@@ -37,6 +40,7 @@ div#info {
     border-radius: 50px;
     cursor: pointer;
     padding: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
 }
 #blockinfo {
     height: 300px;
@@ -46,9 +50,10 @@ div#info {
     margin-left: 50px;
     display: none;
     border-radius: 20px;
-    box-shadow: inset 0px 0px 70px 0px black;
+    box-shadow: inset 0px 0px 70px 0px var(--black);
     font-family: 'Mulish', sans-serif;
     font-size: 0.9em;
+    
 }
 #blockinfo a {
     font-weight: bolder;
@@ -59,22 +64,22 @@ height: 200px;
 width: 200px;
 margin: auto;
 margin-top: 20px;
-background-color: #ffffff;
+background-color: var(--white);
 padding: 8px;
 border-radius: 20px;
 }
 section > article#imglogin {
     height: 200px;
     width: 250px;
-    background-color: rgb(201, 253, 80);
     transition: 0.2s;
 
 }
 section > article#arealogin {
     height: 320px;
     width: 250px;
-    background-color: white;
-    border-radius: 0px 0px 40px 40px ;
+    background-color: var(--white);
+    border-radius: 0px 0px 40px 40px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
 }
 section > article#imglogin {
     background-image: url(../imagens/subway1.jpg);
@@ -82,6 +87,7 @@ section > article#imglogin {
     background-size: cover;
     border-radius: 40px 40px 0px 0px;
     transition: 0.2s;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
 }
 section > article h1 {
     text-align: center;
@@ -97,7 +103,7 @@ section > article p {
 section > article > form > div.logindata {
     height: 50px;
     width: 230px;
-    background-color: #00e0a8;
+    background-color: var(--lightgreen);
     margin: auto;
     margin-bottom: 5px;
     border-radius: 10px;
@@ -123,17 +129,17 @@ section > article > form > input#entrar {
     transform: translate(-50%);
     cursor: pointer;
     border-radius: 5px;
-    background-color: rgb(228, 228, 228);
+    background-color: var(--lightgray);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.486);
 }
 section > article > form > input#entrar:hover {
-    background-color: #00e0a8;
-    color: black;
+    background-color: var(--lightgreen);
+    color: var(--black);
     transition: 0.3s;
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 section > article > form > div.opcoes1 {
     margin: auto;
@@ -142,7 +148,7 @@ section > article > form > div.opcoes1 {
     cursor: pointer;
 }
 section > article > form > div.opcoes1:hover {
-    background-color: #00e0a86e;
+    background-color: var(--lightgreen-t);
     border-radius: 10px;
 }
 section > article > form > div > a > p.opcoes2:hover::after {
