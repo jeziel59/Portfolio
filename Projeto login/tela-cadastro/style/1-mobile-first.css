@@ -57,7 +57,7 @@ body {
 
 .flex-item {
     background-color: var(--lightgreen);
-    width: 300px;
+    width: 330px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: auto;
@@ -82,7 +82,7 @@ section > form > div > p > label {
 }
 
 section > form > p {
-    margin-left: 10px;
+    margin-left: 16px;
 }
 .button {
     height: 30px;
