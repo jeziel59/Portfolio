@@ -32,7 +32,7 @@ div#info {
     height: 30px;
     width: 30px;
     margin: 0px 20px 20px 0px;
-    background-image: url(imagens/info.png);
+    background-image: url(../imagens/info.png);
     background-size: cover;
     border-radius: 50px;
     cursor: pointer;
@@ -41,7 +41,7 @@ div#info {
 #blockinfo {
     height: 300px;
     width: 250px;
-    background-image: url(imagens/phone01.png);
+    background-image: url(../imagens/phone01.png);
     position: absolute;
     margin-left: 50px;
     display: none;
@@ -77,7 +77,7 @@ section > article#arealogin {
     border-radius: 0px 0px 40px 40px ;
 }
 section > article#imglogin {
-    background-image: url(imagens/subway1.jpg);
+    background-image: url(../imagens/subway1.jpg);
     background-position: top center;
     background-size: cover;
     border-radius: 40px 40px 0px 0px;
@@ -147,7 +147,7 @@ section > article > form > div.opcoes1:hover {
 }
 section > article > form > div > a > p.opcoes2:hover::after {
     content:""; 
-    background-image: url("imagens/acess.png");
+    background-image: url("../imagens/acess.png");
     width:20px;
     height:20px;
     background-size:20px 20px;

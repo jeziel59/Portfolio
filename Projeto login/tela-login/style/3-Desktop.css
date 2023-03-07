@@ -23,7 +23,7 @@
         transition: 0.2s;
     }
     section > article#imglogin {
-        background-image: url(imagens/subway2.jpg);
+        background-image: url(../imagens/subway2.jpg);
         background-position: bottom center;
 }
 }
