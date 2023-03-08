@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@media screen {
 * {
     margin: 0px;
     border: 0px;
     box-sizing: border-box;
 }
-
 :root {
     --darkpurple:#5044ff;
     --lightpurple:#8a2be2;
@@ -15,48 +15,91 @@
     --white: #ffffff;
     --lightgray: #e4e4e4;
 }
+
+    body {
+        background-image: linear-gradient(to bottom, var(--darkpurple) , var(--lightpurple));
+        height: 100%;
+        font-family: 'Mulish', sans-serif;
+    }
 section#back-area {
     display: flex;
     flex-direction: column;
-    height: 1090px;
+    height: 1230px;
     width: 345px;
-    background-color: var(--white);
     margin: auto;
     margin-top: 10px;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+    transition: 0.2s;
 } 
-.imgcad {
+section > article#info {
+    height: 45px;
+    width: 330px;
+}
+section > article#info > img {
+    height: 40px;
+    width: 40px;
+}
+section > article > img#imginfo {
+    cursor: pointer;
+}
+section > article div#infotext {
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    background-image: url(../imagens/phone01.png);
+    margin-left: 45px;
+    margin-top: -45px;
+    display: none;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 70px 0px var(--black);
+}
+section > article div#infotext > p {
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        margin-top: 20px;
+        background-color: var(--white);
+        padding: 8px;
+        border-radius: 20px;   
+}
+section > article > div > p img.imglink {
+    height: 15px;
+    width: 15px;
+}
+section > article.imgcad {
     height: 200px;
     width: 345px;
     background-image: url(../imagens/subway1.jpg);
+    background-repeat: no-repeat;
     border-radius: 20px 20px 0px 0px;
-
+    transition: 0.2s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
 }
-p, label, legend, option{
-    font-family: 'Mulish', sans-serif;
+section > article#cabecalho {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
 }
-h1 {
+section >article#cabecalho > h1 {
+    padding-top: 10px;
     text-align: center;
     font-size: 2em;
     padding-top: 5px;
-    font-family: 'Mulish', sans-serif;
 }
-div#cabecalho > h1 {
-    padding-top: 10px;
-}
-div#cabecalho > p {
+section >article#cabecalho > p {
     text-align: center;
     margin-bottom: 15px;
 }
-
-body {
-    background-image: linear-gradient(to top, var(--darkpurple) , var(--lightpurple));
-    height: 100%;
-    
+section > form {
+    transition: 0.2s;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
 }
-
-.flex-item {
+section > form > p {
+    margin-left: 16px;
+    margin-bottom: 5px;
+    transition: 0.2s;
+}
+section > form > div.flex-item {
     background-color: var(--lightgreen);
     width: 330px;
     margin: auto;
@@ -64,26 +107,19 @@ body {
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
 }
-.input {
+section > form > div > fieldset > input.input {
     float: right;
     height: 20px;
     width: 190px;
     border-radius: 5px;
 }
-.input2 {
-    display: block;
-    width: 90%;
-    margin-left: 10px;
+section > form > div > fieldset > input.input2 {
+    width: 100%;
 }
 section > form > div > p > label {
     margin-left: 10px;
 }
-
-section > form > p {
-    margin-left: 16px;
-    margin-bottom: 5px;
-}
-.button {
+section > form > input.button {
     height: 30px;
     width: 150px;
     margin: 10px 20px 20px 50%;
@@ -92,15 +128,19 @@ section > form > p {
     border-radius: 5px;
     background-color: rgb(228, 228, 228);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.486);
-
+    transition: 0.2s;
 }
-.button:hover {
+section > form > input.button:hover {
     background-color: var(--lightgreen);
     color: var(--black);
     transition: 0.3s;
 }
-#fim {
-    height: 10px;
-    
-}
 
+.fim{
+    width: 300px;
+    height: 50px;
+    padding-top: 20px;
+    margin: auto;
+
+}
+}

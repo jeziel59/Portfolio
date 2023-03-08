@@ -68,6 +68,10 @@ background-color: var(--white);
 padding: 8px;
 border-radius: 20px;
 }
+img.imglink {
+    height: 15px;
+    width: 15px;
+}
 section > article#imglogin {
     height: 200px;
     width: 250px;
