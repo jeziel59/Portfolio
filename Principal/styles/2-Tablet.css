@@ -41,4 +41,7 @@
             margin-left: 285px;
             margin-top: 10px;
         }
+        #item1 {
+            background-image: url(../imagens/login-tablet.png);
+        }
     }

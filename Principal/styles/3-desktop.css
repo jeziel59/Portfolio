@@ -97,6 +97,7 @@
             transition: 0.2s;
         }
         #item1 {
+            background-image: url(../imagens/login-pc.png);
             grid-column: 1 / span 2;
             border-radius: 5px 0px 0px 0px;
         }
