@@ -16,45 +16,45 @@
         <h1>Cadastre-se!</h1>
         <p>Preencha seus dados e clique em cadastrar</p>
     </div>
-    <form action="cadastro.php" method="get" autocomplete="off"> 
+    <form action="cadastro.php" method="post" autocomplete="off"> 
         <p>Dados de login</p>
         <div class="flex-item">
-            <p>
+            <fieldset>
                 <label for="iemail">E-mail: </label>
-                <input type="email" name="email" id="iemail" class="input">
-            </p>
+                <input type="email" name="email" id="iemail" class="input" placeholder="Seu e-mail*" required>
+            </fieldset>
         </div>
 
         <div class="flex-item">
-            <p>
+            <fieldset>
                 <label for="ipassword">Senha: </label>
-                <input type="password" name="password" id="ipassword" class="input">
-            </p>
+                <input type="password" name="password" id="ipassword" class="input" placeholder="Nova senha*" required>
+            </fieldset>
         </div>
         <div class="flex-item">
-            <p>
-                <label for="ipassword2">Confirmar: </label>
-                <input type="password" name="password" id="ipassword2" class="input">
-            </p>
+            <fieldset>
+                <label for="ipassword2">Repetir senha: </label>
+                <input type="password" name="password" id="ipassword2" class="input" placeholder="Repetir nova senha*" required>
+            </fieldset>
         </div>
         <p>Dados pessoais</p>
         <div class="flex-item">
-            <p>
+            <fieldset>
                 <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" class="input">
-            </p>
+                <input type="text" name="nome" id="inome" class="input" placeholder="Primeiro nome*" required>
+            </fieldset>
         </div>
         <div class="flex-item">
-            <p>
+            <fieldset>
                 <label for="isobrenome">Sobrenome: </label>
-                <input type="text" name="sobrenome" id="isobrenome" class="input">
-            </p>
+                <input type="text" name="sobrenome" id="isobrenome" class="input" placeholder="Sobrenome*" required>
+            </fieldset>
         </div>
         <div class="flex-item">
-            <p>
+            <fieldset>
                 <label for="iphone">Telefone: </label>
-                    <input type="tel" name="phone" id="iphone" pattern="[0-9]{2}[0-9]{9}" placeholder="DDD + Tel" class="input">
-            </p>
+                    <input type="tel" name="phone" id="iphone" pattern="[0-9]{2}[0-9]{9}" placeholder="DDD + Telefone*" class="input" required>
+            </fieldset>
         </div>
         <div class="flex-item">
             <fieldset>
@@ -64,13 +64,13 @@
             </fieldset>
         </div>
         <div class="flex-item">
-            <p>
+            <fieldset>
                 <label for="inasc">Data de nascimento:</label>
                 <input type="date" name="nasc" id="inasc" class="input2">
-            </p>
+            </fieldset>
         </div>
         <div class="flex-item">
-            <p>
+            <fieldset>
             <label for="iconheceu">Onde conheceu?</label>
             <select name="conheceu" id="iconheceu" class="input2">
                 <option value="" selected></option>
@@ -79,37 +79,74 @@
                     <option value="RP">Recomendação pessoal</option>
                 </optgroup>
             </select>
-            </p>
-        </div>        
+            </fieldset>
+        </div>  
+        <p>Endereço</p>
         <div class="flex-item">
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" class="input">
-            </p>
+            <fieldset>
+                <label for="icep">CEP:</label>
+                <input type="number" name="cep" id="icep" class="input">
+            </fieldset>
         </div>
         <div class="flex-item">
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" class="input">
-            </p>
+            <fieldset>
+                <label for="irua">Rua:</label>
+                <input type="text" name="rua" id="irua" class="input">
+            </fieldset>
         </div>
         <div class="flex-item">
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" class="input">
-            </p>
+            <fieldset>
+                <label for="inumero">Numero:</label>
+                <input type="number" name="numero" id="inumero" class="input">
+            </fieldset>
         </div>
         <div class="flex-item">
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" class="input">
-            </p>
+            <fieldset>
+                <label for="ibairro">Bairro:</label>
+                <input type="text" name="bairro" id="ibairro" class="input">
+            </fieldset>
         </div>
-                <div class="flex-item">
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" class="input">
-            </p>
+        <div class="flex-item">
+            <fieldset>
+                <label for="icidade">cidade:</label>
+                <input type="text" name="cidade" id="icidade" class="input">
+            </fieldset>
+        </div>
+        <div class="flex-item">
+            <fieldset>
+                <label for="iestado">Estado:</label>
+                <select id="iestado" name="estado" class="input">
+                    <option value="" selected></option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+            </fieldset>
         </div>
 
     <input type="submit" value="Cadastrar" class="button">
