@@ -16,18 +16,18 @@
     --lightgray: #e4e4e4;
 }
 
-    body {
-        background-image: linear-gradient(to bottom, var(--darkpurple) , var(--lightpurple));
-        height: 100%;
-        font-family: 'Mulish', sans-serif;
-    }
+body {
+    background-image: linear-gradient(to bottom, var(--darkpurple) , var(--lightpurple));
+    height: 100%;
+    font-family: 'Mulish', sans-serif;
+}
 section#back-area {
     display: flex;
     flex-direction: column;
     height: 1230px;
     width: 345px;
     margin: auto;
-    margin-top: 10px;
+    padding-top: 10px;
     border-radius: 20px 20px 20px 20px;
     transition: 0.2s;
 } 
@@ -93,6 +93,7 @@ section > form {
     transition: 0.2s;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
+    border-radius: 0px 0px 20px 20px;
 }
 section > form > p {
     margin-left: 16px;
@@ -135,12 +136,21 @@ section > form > input.button:hover {
     color: var(--black);
     transition: 0.3s;
 }
-
 .fim{
     width: 300px;
     height: 50px;
-    padding-top: 20px;
     margin: auto;
+    margin-top: 20px;
 
+}
+.fim  img {
+    height: 15px;
+    width: 15px;
+}
+.fim a {
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--lightgreen-t);
 }
 }
