@@ -52,14 +52,13 @@ div#info {
     border-radius: 20px;
     box-shadow: inset 0px 0px 70px 0px var(--black);
     font-family: 'Mulish', sans-serif;
-    font-size: 0.9em;
     
 }
 #blockinfo a {
     font-weight: bold;
 }
 #infotext {
-    height: 200px;
+    height: 220px;
     width: 200px;
     margin: auto;
     margin-top: 20px;
