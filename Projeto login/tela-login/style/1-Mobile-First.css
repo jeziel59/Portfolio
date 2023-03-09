@@ -11,6 +11,7 @@
     --lightgreen:#00e0a8;
     --lightgreen-t:#00e0a86e;
     --black: #000000;
+    --black-t:#00000091;
     --white: #ffffff;
     --lightgray: #e4e4e4;
 }
@@ -81,7 +82,7 @@ section > article#arealogin {
     width: 250px;
     background-color: var(--white);
     border-radius: 0px 0px 40px 40px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+    box-shadow: 3px 3px 5px var(--black-t);
 }
 section > article#imglogin {
     background-image: url(../imagens/subway1.jpg);
@@ -89,7 +90,7 @@ section > article#imglogin {
     background-size: cover;
     border-radius: 40px 40px 0px 0px;
     transition: 0.2s;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+    box-shadow: 2px 2px 3px var(--black-t);
 }
 section > article h1 {
     text-align: center;
@@ -109,6 +110,7 @@ section > article > form > div.logindata {
     margin: auto;
     margin-bottom: 5px;
     border-radius: 10px;
+    box-shadow: 2px 2px 3px var(--black-t);
 }
 .databox {
     position: absolute;
@@ -132,7 +134,7 @@ section > article > form > input#entrar {
     cursor: pointer;
     border-radius: 5px;
     background-color: var(--lightgray);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.486);
+    box-shadow: 3px 3px 3px var(--black-t);
 }
 section > article > form > input#entrar:hover {
     background-color: var(--lightgreen);
