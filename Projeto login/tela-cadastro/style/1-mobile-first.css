@@ -35,28 +35,28 @@ section#back-area {
     transition: 0.2s;
 } 
 section > article#info {
-    height: 45px;
-    width: 330px;
-}
-section > article#info > img {
     height: 40px;
     width: 40px;
-}
-section > article > img#imginfo {
+    border-radius: 50px;
+    background-image: url(../imagens/info.png);
+    background-size: cover;
+    border-radius: 50px;
     cursor: pointer;
+    padding: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+    margin-bottom: 5px;
 }
-section > article div#infotext {
+section > div#infotext {
     height: 300px;
     width: 250px;
     position: absolute;
     background-image: url(../imagens/phone01.png);
-    margin-left: 45px;
-    margin-top: -45px;
+    margin-left: 50px;
     display: none;
     border-radius: 20px;
     box-shadow: inset 0px 0px 70px 0px var(--black);
 }
-section > article div#infotext > p {
+section > div#infotext > p {
     height: 200px;
     width: 200px;
     margin: auto;
@@ -65,11 +65,11 @@ section > article div#infotext > p {
     padding: 8px;
     border-radius: 20px;   
 }
-section > article > div > p img.imglink {
+img.imglink {
     height: 15px;
     width: 15px;
 }
-section > article > div > p > a {
+section > div#infotext a {
     text-decoration: none;
     font-weight: bold;
     color: var(--black);
