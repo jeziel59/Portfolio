@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+#section-grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns:minmax (50vw, 50vw); 
+    grid-template-rows: minmax(200px, 250px) repeat(10, minmax(300px, 250px));
+    gap: 5px;
+
+}
+.head {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item1 {
+    background-image: url(../imagens/beagle.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item2 {
+    background-image: url(../imagens/bulldog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item3 {
+    background-image: url(../imagens/chihuahua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item4 {
+    background-image: url(../imagens/boxer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item5 {
+    background-image: url(../imagens/dalmata.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item6 {
+    background-image: url(../imagens/york.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.item7 {
+    background-image: url(../imagens/pastor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item8 {
+    background-image: url(../imagens/poodle.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.item9 {
+    background-image: url(../imagens/golden1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item10 {
+    background-image: url(../imagens/husky.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
