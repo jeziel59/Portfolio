@@ -1,116 +1,115 @@
 @charset "UTF-8";
-    @media screen and (min-width:992px) {
-        header {
-            height: 200px;
-            width: 950px;
-            margin: auto;
-            margin-top: 20px;
-            transition: 0.2s;
-        }
-        header > span#menu {
-            display: none;
-        }
-        header > i#menu {
-            display: none;
-            transition: 0.2s;
-        }
-        header > nav.flex-box {
-            display: flex;
-            flex-direction: row;
-            background-color: var(--black-t);
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding: 20px;
-            border-radius: 5px 5px 0px 0px
-        }
-        header > nav > a > div.flex-item {
-            height: 30px;
-            width: 170px;
-        }
-        header > section > h1 {
-            font-size: 90px;
-        }
-        main > section aside.aside1 {
-            display: block;
-            height: 820px;
-            width: 200px;
-            background-image: url(../imagens/desktop.png);
-            float: right;  
-            margin-right: 10px;
-            border-radius: 5px;
-            box-shadow: inset 0px 0px 70px 0px var(--black);
-        }
-        aside > p {
-            height: 350px;
-            width: 180px;
-            margin-left: 12px;
-            margin-top: 460px;
-        }
-        main > aside.aside2 {
-            display: none;
-        }
-        main > section.sec1 {
-            height: 860px;
-            width: 970px;
-            padding-left: 10px;
-            margin-top: 30px;
-        }
-        header > section.head {
-            height: 160px;
-        }
-        main > section > article.article1 {
-            height: 400px;
-            width: 700px;
-            float: left;
-            margin-bottom: 20px;
-            transition: 0.2s;
-        }
-        main > section > article > img#imgpessoal {
-            height: 280px;
-            width: 400px;
-            margin-left: 20px;
-            margin-top: 40px;
-            position: absolute;
-            border-radius: 20px;
-            transition: 0.2s;
-        }
-        main > section > article > h1 {
-            font-size: 70px;
-            margin-top: 280px;
-            margin-left: 200px;
-            position: absolute;
-            transition: 0.2s;
-        }
-        main > section > article > p {
-            margin-left: 450px;
-            margin-top: 40px;
-            max-width: 240px;
-            text-align: justify;
-            background-color: var(--white-t);
-            transition: 0.2s;
-        }
-
-        main > section > article > div.container {
-            grid-template-columns: repeat(4, 1fr);
-            transition: 0.2s;
-        }
-        #item1 {
-            background-image: url(../imagens/login-pc.png);
-            grid-column: 1 / span 2;
-            border-radius: 5px 0px 0px 0px;
-        }
-        #item2 {
-            grid-column: 3 / span 4;
-            border-radius: 0px 5px 0px 0px;
-        }
-        #item3 {
-            grid-column: 1 / span 2;
-            border-radius: 0px 0px 0px 5px;
-        }
-        #item4 {
-            grid-column: 3 / span 4;
-            border-radius: 0px 0px 5px 0px;
-        }
+@media screen and (min-width:992px) {
+    header {
+        height: 200px;
+        width: 950px;
+        margin: auto;
+        margin-top: 20px;
+        transition: 0.2s;
+    }
+    header > span#menu {
+        display: none;
+    }
+    header > i#menu {
+        display: none;
+        transition: 0.2s;
+    }
+    header > nav.flex-box {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--black-t);
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 5px 5px 0px 0px
+    }
+    header > nav > a > div.flex-item {
+        height: 30px;
+        width: 170px;
+    }
+    header > section > h1 {
+        font-size: 90px;
+    }
+    main > section aside.aside1 {
+        display: block;
+        height: 820px;
+        width: 200px;
+        background-image: url(../imagens/desktop.png);
+        float: right;  
+        margin-right: 10px;
+        border-radius: 5px;
+        box-shadow: inset 0px 0px 70px 0px var(--black);
+    }
+    aside > p {
+        height: 350px;
+        width: 180px;
+        margin-left: 12px;
+        margin-top: 460px;
+    }
+    main > aside.aside2 {
+        display: none;
+    }
+    main > section.sec1 {
+        height: 860px;
+        width: 970px;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+    header > section.head {
+        height: 160px;
+    }
+    main > section > article.article1 {
+        height: 400px;
+        width: 700px;
+        float: left;
+        margin-bottom: 20px;
+        transition: 0.2s;
+    }
+    main > section > article > img#imgpessoal {
+        height: 280px;
+        width: 400px;
+        margin-left: 20px;
+        margin-top: 40px;
+        position: absolute;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+    main > section > article > h1 {
+        font-size: 70px;
+        margin-top: 280px;
+        margin-left: 200px;
+        position: absolute;
+        transition: 0.2s;
+    }
+    main > section > article > p {
+        margin-left: 450px;
+        margin-top: 40px;
+        max-width: 240px;
+        text-align: justify;
+        background-color: var(--white-t);
+        transition: 0.2s;
+    }
+    main > section > article > div.container {
+        grid-template-columns: repeat(4, 1fr);
+        transition: 0.2s;
+    }
+    #item1 {
+        background-image: url(../imagens/login-pc.png);
+        grid-column: 1 / span 2;
+        border-radius: 5px 0px 0px 0px;
+    }
+    #item2 {
+        grid-column: 3 / span 4;
+        border-radius: 0px 5px 0px 0px;
+    }
+    #item3 {
+        grid-column: 1 / span 2;
+        border-radius: 0px 0px 0px 5px;
+    }
+    #item4 {
+        grid-column: 3 / span 4;
+        border-radius: 0px 0px 5px 0px;
+    }
 }

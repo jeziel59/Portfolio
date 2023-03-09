@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 * {
     margin: 0px;
     border: 0px;
@@ -56,17 +56,16 @@ div#info {
     
 }
 #blockinfo a {
-    font-weight: bolder;
-    text-decoration: underline;
+    font-weight: bold;
 }
 #infotext {
-height: 200px;
-width: 200px;
-margin: auto;
-margin-top: 20px;
-background-color: var(--white);
-padding: 8px;
-border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--white);
+    padding: 8px;
+    border-radius: 20px;
 }
 img.imglink {
     height: 15px;

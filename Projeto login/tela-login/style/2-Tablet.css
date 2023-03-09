@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @media only screen and (min-width: 768px)  {
-
     section {
         height: 400px;
         width: 768px;
@@ -26,9 +25,8 @@
         background-image: url(../imagens/subway2.jpg);
         background-position: bottom center;
     }
-    .opcoes1 {
+    section > article > form > div.opcoes1 {
         width: 170px;
         height: 20px;
     }
-
 }

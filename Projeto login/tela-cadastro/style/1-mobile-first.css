@@ -7,20 +7,22 @@
     box-sizing: border-box;
 }
 :root {
-    --darkpurple:#5044ff;
-    --lightpurple:#8a2be2;
-    --lightgreen:#00e0a8;
-    --lightgreen-t:#00e0a86e;
+    --darkpurple: #5044ff;
+    --lightpurple: #8a2be2;
+    --lightgreen: #00e0a8;
+    --lightgreen-t: #00e0a86e;
     --black: #000000;
+    --black-t:#00000091;
     --white: #ffffff;
     --lightgray: #e4e4e4;
+    --font-txt:'Mulish', sans-serif;
 }
 
 body {
     background-image: linear-gradient(to bottom, var(--darkpurple) , var(--lightpurple));
     background-attachment: fixed;
     height: 100%;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--font-txt);
 }
 section#back-area {
     display: flex;
@@ -55,17 +57,22 @@ section > article div#infotext {
     box-shadow: inset 0px 0px 70px 0px var(--black);
 }
 section > article div#infotext > p {
-        height: 200px;
-        width: 200px;
-        margin: auto;
-        margin-top: 20px;
-        background-color: var(--white);
-        padding: 8px;
-        border-radius: 20px;   
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--white);
+    padding: 8px;
+    border-radius: 20px;   
 }
 section > article > div > p img.imglink {
     height: 15px;
     width: 15px;
+}
+section > article > div > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black);
 }
 section > article.imgcad {
     height: 200px;
@@ -74,11 +81,11 @@ section > article.imgcad {
     background-repeat: no-repeat;
     border-radius: 20px 20px 0px 0px;
     transition: 0.2s;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
+    box-shadow: 3px 3px 5px var(--black-t);
 }
 section > article#cabecalho {
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px var(--black-t);
 }
 section >article#cabecalho > h1 {
     padding-top: 10px;
@@ -92,8 +99,8 @@ section >article#cabecalho > p {
 }
 section > form {
     transition: 0.2s;
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.568);
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px var(--black-t);
     border-radius: 0px 0px 20px 20px;
 }
 section > form > p {
@@ -107,7 +114,7 @@ section > form > div.flex-item {
     margin: auto;
     margin-bottom: 8px;
     border-radius: 10px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+    box-shadow: 2px 2px 3px var(--black-t);
 }
 section > form > div > fieldset > input.input {
     float: right;
@@ -128,8 +135,8 @@ section > form > input.button {
     transform: translate(-50%);
     cursor: pointer;
     border-radius: 5px;
-    background-color: rgb(228, 228, 228);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.486);
+    background-color: var(--lightgray);
+    box-shadow: 3px 3px 3px var(--black-t);
     transition: 0.2s;
 }
 section > form > input.button:hover {

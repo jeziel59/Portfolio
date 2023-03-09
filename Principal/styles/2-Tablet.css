@@ -1,47 +1,47 @@
 @charset "UTF-8";
-    @media screen and (min-width:768px) {
-        header {
-            width: 600px;
-            transition: 0.2s;
-        }
-        header > i#menu {
-            width: 600px;
-            transition: 0.2s;
-        }
-        header > nav > a > div.flex-item {
-            width: 600px;
-            transition: 0.2s;
-        }
-        header > section.head {
-             height: 120px;
-        }
-        main > section.sec1 {
-            width: 600px;
-            height: 1160px;
-            transition: 0.2s;
-        } 
-        main > section > article.article1 {
-            width: 600px;
-            height: 320px;
-            transition: 0.2s;
-        }
-        main > section > article > p {
-            width: 240px;
-            margin-left: 340px;
-            margin-top: 20px;
-            transition: 0.2s;
-        }
-        main > aside.aside2 {
-            background-image: url(../imagens/tablet.png);
-            height: 300px;
-            width: 600px;
-            transition: 0.2s;
-        }
-        aside > p {
-            margin-left: 285px;
-            margin-top: 10px;
-        }
-        #item1 {
-            background-image: url(../imagens/login-tablet.png);
-        }
+@media screen and (min-width:768px) {
+    header {
+        width: 600px;
+        transition: 0.2s;
     }
+    header > i#menu {
+        width: 600px;
+        transition: 0.2s;
+    }
+    header > nav > a > div.flex-item {
+        width: 600px;
+        transition: 0.2s;
+    }
+    header > section.head {
+            height: 120px;
+    }
+    main > section.sec1 {
+        width: 600px;
+        height: 1160px;
+        transition: 0.2s;
+    } 
+    main > section > article.article1 {
+        width: 600px;
+        height: 320px;
+        transition: 0.2s;
+    }
+    main > section > article > p {
+        width: 240px;
+        margin-left: 340px;
+        margin-top: 20px;
+        transition: 0.2s;
+    }
+    main > aside.aside2 {
+        background-image: url(../imagens/tablet.png);
+        height: 300px;
+        width: 600px;
+        transition: 0.2s;
+    }
+    aside > p {
+        margin-left: 285px;
+        margin-top: 10px;
+    }
+    #item1 {
+        background-image: url(../imagens/login-tablet.png);
+    }
+}
