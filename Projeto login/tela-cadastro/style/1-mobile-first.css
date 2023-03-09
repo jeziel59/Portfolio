@@ -116,7 +116,7 @@ section > form > div.flex-item {
     border-radius: 10px;
     box-shadow: 2px 2px 3px var(--black-t);
 }
-section > form > div > fieldset > input.input {
+.input {
     float: right;
     height: 20px;
     width: 190px;
@@ -124,6 +124,7 @@ section > form > div > fieldset > input.input {
 }
 section > form > div > fieldset > input.input2 {
     width: 100%;
+    border-radius: 5px;
 }
 section > form > div > p > label {
     margin-left: 10px;
