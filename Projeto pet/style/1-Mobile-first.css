@@ -66,7 +66,6 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
 }
 .item9 {
     background-image: url(../imagens/golden1.jpg);
@@ -77,6 +76,29 @@ body::-webkit-scrollbar {
     background-image: url(../imagens/husky.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.info {
+    height: 50px;
+    width: 50px;
+    background-image: url(../imagens/info2.png);
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.infotext {
+    display: block;
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.closebox {
+    display: none;
 }
 
 

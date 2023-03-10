@@ -1,15 +1,14 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1050px){
     #section-grid {
         display: grid;
         height: 100vh;
         width: 100vw;
-        grid-template-columns: minmax(100px, 50vw) minmax(100px, 50vw) ;
-        grid-template-rows:  minmax(200px, 250px) repeat(7, minmax(300px, 250px));
-    }
-    .head {
-        grid-column: 1/3;
+        grid-template-columns:minmax (50vw, 50vw); 
+        grid-template-rows: minmax(300px, 350px) repeat(10, minmax(400px, 50px));
+        gap: 5px;
+        
     }
     .item5 {
         background-position: center center; 
@@ -29,7 +28,7 @@
     }
     .item9 {
         grid-column: 1/3;
-        background-position: center top;
+        background-position: top center;
         transition: 0.2s;
     }
     .item10 {
