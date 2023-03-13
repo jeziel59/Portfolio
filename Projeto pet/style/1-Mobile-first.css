@@ -18,14 +18,15 @@ body::-webkit-scrollbar {
 /* Botão de informações da página */
   section > article > div.infopage {
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-image: url(../imagens/info.png);
     background-size: cover;
     margin-left: 10px;
-    margin-top: 10px;
-    cursor: pointer
-    
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
 }
 section > article > div.infobox {
     display: none;
@@ -36,14 +37,14 @@ section > article > div.infobox {
     margin-top: 10px;
     background-image: url(../imagens/phone01.png);
     border-radius: 20px;
-    box-shadow: inset 0px 0px 70px 0px black;
+    box-shadow: inset 0px 0px 70px 0px #000000;
 }
 section > article > div.infobox > p {
     height: 200px;
     width: 200px;
     margin: auto;
     margin-top: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding: 8px;
     border-radius: 20px; 
     font-family: 'Dosis', sans-serif;
@@ -55,14 +56,13 @@ img.imglink {
 .infobox a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--black);
+    color: #000000;
 }
  /* Layout da página */
 section#section-grid {
     display: grid;
     height: 100vh;
     width: 100vw;
-    grid-template-columns:minmax (50vw, 50vw); 
     grid-template-rows: minmax(200px, 250px) repeat(10, minmax(300px, 250px));
     gap: 5px;
 }
@@ -73,12 +73,13 @@ section article.head {
     background-size: cover;
 }
 section article.head > h1 {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-align: center;
-    font-family: titulo;
+    font-family: 'Dosis', sans-serif;
     font-size: 2em;
     margin-top: 50px;
-    text-shadow: 2px 2px 20px black;
+    text-shadow: 2px 2px 20px #000000;
+    transition: 0.2s;
 }
 /* Botão de informações da lista */
 section > article > div.info {
@@ -95,7 +96,7 @@ section > article > div.info {
     display: block;
     height: 270px;
     width: 300px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 20px;
     padding: 10px;
     margin-left: 70px;
@@ -161,14 +162,14 @@ section > article > div.info {
 }
 /* Footer */
 section > footer.by {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     height: 25px;
     margin: auto;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 }
 section > footer.by a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-family: 'Dosis', sans-serif;
 }
 

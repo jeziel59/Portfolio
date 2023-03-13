@@ -6,9 +6,14 @@
         display: grid;
         height: 100vh;
         width: 100vw;
-        grid-template-columns:minmax (50vw, 50vw); 
+        grid-template-columns: minmax(50vw, 50vw); 
         grid-template-rows: minmax(300px, 350px) repeat(7, minmax(400px, 50px)) minmax(30px, 20px);
         gap: 5px;   
+    }
+    /* Cabeçalho */
+    section article.head > h1 { 
+        font-size: 4em;
+        transition: 0.2s;
     }
     /* Itens da lista */
     .item5 {
