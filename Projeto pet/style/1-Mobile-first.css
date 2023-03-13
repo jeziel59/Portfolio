@@ -11,26 +11,68 @@
 }
 body {
     background-color: black;
-
 }
 body::-webkit-scrollbar {
     display: none;
   }
-#section-grid {
+/* Botão de informações da página */
+  section > article > div.infopage {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-image: url(../imagens/info.png);
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer
+    
+}
+section > article > div.infobox {
+    display: none;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
+    background-image: url(../imagens/phone01.png);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 70px 0px black;
+}
+section > article > div.infobox > p {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 20px; 
+    font-family: 'Dosis', sans-serif;
+}
+img.imglink {
+    height: 15px;
+    width: 15px;
+}
+.infobox a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black);
+}
+ /* Layout da página */
+section#section-grid {
     display: grid;
     height: 100vh;
     width: 100vw;
     grid-template-columns:minmax (50vw, 50vw); 
     grid-template-rows: minmax(200px, 250px) repeat(10, minmax(300px, 250px));
     gap: 5px;
-
 }
-.head {
+/* Cabeçalho */
+section article.head {
     background-image: url(../imagens/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.head > h1 {
+section article.head > h1 {
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: titulo;
@@ -38,6 +80,33 @@ body::-webkit-scrollbar {
     margin-top: 50px;
     text-shadow: 2px 2px 20px black;
 }
+/* Botão de informações da lista */
+section > article > div.info {
+    height: 50px;
+    width: 50px;
+    background-image: url(../imagens/info2.png);
+    background-size: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* Balão de informação dos itens*/
+.infotext {
+    display: block;
+    height: 270px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 70px;
+    margin-top: -50px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+}
+.closebox {
+    display: none;
+}
+/* Itens da lista */
 .item1 {
     background-image: url(../imagens/beagle.jfif);
     background-repeat: no-repeat;
@@ -90,38 +159,14 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.info {
-    height: 50px;
-    width: 50px;
-    background-image: url(../imagens/info2.png);
-    background-size: cover;
-    margin-left: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.infotext {
-    display: block;
-    height: 270px;
-    width: 300px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px;
-    margin-left: 70px;
-    margin-top: -50px;
-    font-family: 'Dosis', sans-serif;
-    font-size: 1em;
-}
-.closebox {
-    display: none;
-}
-.by {
-
+/* Footer */
+section > footer.by {
     color: rgb(255, 255, 255);
     height: 25px;
     margin: auto;
     background-color: rgb(0, 0, 0);
 }
-.by a {
+section > footer.by a {
     text-decoration: none;
     color: white;
     font-family: 'Dosis', sans-serif;

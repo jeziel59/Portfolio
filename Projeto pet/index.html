@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="style/1-Mobile-first.css">
     <link rel="stylesheet" href="style/2-Tablet.css">
     <link rel="stylesheet" href="style/3-desktop.css">
-    <title>Pet</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>TOP 10 RAÇAS</title>
 </head>
 <body>
     <main>
         <section id="section-grid">
             <article class="head">
+                <div class="infopage" onclick="info()"></div>
+                <div class="infobox" id="iinfobox">
+                    <p>
+                        Página desenvolvida com Grid Layout utilizando 100% da altura e largura adaptando-se com Medias Queries, Ícones de informação que utilizam uma única função para expandir. Você pode conferir aqui o <a href="https://github.com/jeziel59/Portfolio/tree/main/Projeto%20pet/style" target="_blank" rel="external">CSS <img src="imagens/link.png" alt="imgem link" class="imglink"></a> e o <a href="https://github.com/jeziel59/Portfolio/blob/main/Projeto%20pet/index.html" target="_blank" rel="external">HTML <img src="imagens/link.png" alt="imgem link" class="imglink"></a> dessa página!
+                    </p>
+                </div>
                 <h1>TOP 10 RAÇAS DE CACHORRO <br> MAIS POPULARES DO MUNDO</h1>
             </article>
             <article class="item1">
@@ -97,9 +104,9 @@
                 <p>À primeira vista, sua cara de lobo e seu porte podem ser intimidadores. Mas, na verdade, o Husky siberiano é amigável, gentil e sociável, além de muito trabalhador. Essa raça foi criada com a companhia de humanos e outros animais para transportar cargas e pessoas, e ter uma convivência pacífica com todos. Isso resultou não só em sua impressionante resistência física e vontade de trabalhar, um temperamento agradável, de boa convivência e muito extrovertido. </p>
                 </div>
             </article>
-            <div class="by">
+            <footer class="by">
                 <p><a href="https://jeziel59.github.io/Portfolio/Principal/index.html#" target="blank" rel="external">Página desenvolvida por Jeziel Silva</a></p>
-            </div>
+            </footer>
         </section>
 
     </main>
@@ -113,6 +120,15 @@
                 nextid.className = "closebox";
             }
         } 
+        function info(){
+            if (document.getElementById("iinfobox").style.display == "none") {
+                document.getElementById("iinfobox").style.display = "block"
+            } else {
+                document.getElementById("iinfobox").style.display = "none"
+            }
+
+        }
+           
     </script>
 </body>
 </html>
