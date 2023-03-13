@@ -13,73 +13,72 @@
     <main>
         <section id="section-grid">
             <article class="head">
-
             </article>
             <article class="item1">
-                <div class="info" onclick="check()"></div>
+                <div class="info" id="info-a" onclick="check(this.id)"></div>
                 <div id="infotext1" class="closebox">
                 <h1>10° Beagle</h1>
                 <p>A alegria do beagle, vai contagiar e divertir diariamente toda a família! Companheiros e aventureiros, adoram descobrir o mundo o tempo todo através do seu faro. Nenhum odor passa batido por esses cachorros, especialmente comida. O beagle encontra facilmente alimentos e adora comer. Mas, é preciso estar atento, pois ele tem tendência à obesidade.</p>
                 </div>
             </article>
             <article class="item2">
-                <div class="info" onclick="check2()"></div>
+                <div class="info" id="info-b" onclick="check(this.id)" ></div>
                 <div id="infotext2" class="closebox">
                 <h1>9° Bulldog inglês</h1>
                 <p> </p>
                 </div>
             </article>
             <article class="item3">
-                <div class="info" onclick="check3()"></div>
+                <div class="info" id="info-c" onclick="check(this.id)"></div>
                 <div id="infotext3" class="closebox">
                 <h1>8° Chihuahua</h1>
                 <p> </p>
                 </div>
             </article>
             <article class="item4">
-                <div class="info" onclick="check4()"></div>
+                <div class="info" id="info-d" onclick="check(this.id)"></div>
                 <div id="infotext4" class="closebox">
                 <h1>7° Boxer </h1>
                 <p> </p>
                 </div>
             </article>
             <article class="item5">
-                <div class="info" onclick="check5()"></div>
+                <div class="info" id="info-e" onclick="check(this.id)"></div>
                 <div id="infotext5" class="closebox">
                 <h1>6° Dalmata </h1>
                 <p> </p>
                 </div>
             </article>
             <article class="item6">
-                <div class="info" onclick="check6()"></div>
+                <div class="info" id="info-f" onclick="check(this.id)"></div>
                 <div id="infotext6" class="closebox">
                 <h1>5° Yorkshire Terrier </h1>
                 <p> </p>
                 </div>
             </article>
             <article class="item7">
-                <div class="info" onclick="check7()"></div>
+                <div class="info" id="info-g" onclick="check(this.id)"></div>
                 <div id="infotext7" class="closebox">
                 <h1>4° Pastor Alemão </h1>
                 <p> </p>
                 </div>
             </article>
             <article class ="item8">
-                <div class="info" onclick="check8()"></div>
+                <div class="info" id="info-h" onclick="check(this.id)"></div>
                 <div id="infotext8" class="closebox">
                 <h1>3° Poodle </h1>
                 <p> </p>
                 </div>
             </article>
             <article class="item9">
-                <div class="info" onclick="check9()"></div>
+                <div class="info" id="info-i" onclick="check(this.id)"></div>
                 <div id="infotext9" class="closebox">
                 <h1>2° Golden Retriver </h1>
                 <p> </p>
                 </div>
             </article>
             <article class="item10">
-                <div class="info" onclick="check10()"></div>
+                <div class="info" id="info-j" onclick="check(this.id)"></div>
                 <div id="infotext10" class="closebox">
                 <h1>1° Husky Siberiano </h1>
                 <p> </p>
@@ -89,73 +88,12 @@
     </main>
     <script>
         function check() {
-            if (document.getElementById("infotext1").className == 'closebox') {
-                document.getElementById("infotext1").className = "infotext";
+            var element = (event.srcElement.id);
+            var nextid = document.getElementById(element).nextElementSibling;
+            if (nextid.className == "closebox") {
+                nextid.className = "infotext";
             } else {
-                document.getElementById("infotext1").className = "closebox";
-            }
-        } 
-        function check2() {
-            if (document.getElementById("infotext2").className == 'closebox') {
-                document.getElementById("infotext2").className = "infotext";
-            } else {
-                document.getElementById("infotext2").className = "closebox";
-            }
-        } 
-        function check3() {
-            if (document.getElementById("infotext3").className == 'closebox') {
-                document.getElementById("infotext3").className = "infotext";
-            } else {
-                document.getElementById("infotext3").className = "closebox";
-            }
-        } 
-        function check4() {
-            if (document.getElementById("infotext4").className == 'closebox') {
-                document.getElementById("infotext4").className = "infotext";
-            } else {
-                document.getElementById("infotext4").className = "closebox";
-            }
-        } 
-        function check5() {
-            if (document.getElementById("infotext5").className == 'closebox') {
-                document.getElementById("infotext5").className = "infotext";
-            } else {
-                document.getElementById("infotext5").className = "closebox";
-            }
-        } 
-        function check6() {
-            if (document.getElementById("infotext6").className == 'closebox') {
-                document.getElementById("infotext6").className = "infotext";
-            } else {
-                document.getElementById("infotext6").className = "closebox";
-            }
-        } 
-        function check7() {
-            if (document.getElementById("infotext7").className == 'closebox') {
-                document.getElementById("infotext7").className = "infotext";
-            } else {
-                document.getElementById("infotext7").className = "closebox";
-            }
-        }
-        function check8() {
-            if (document.getElementById("infotext8").className == 'closebox') {
-                document.getElementById("infotext8").className = "infotext";
-            } else {
-                document.getElementById("infotext8").className = "closebox";
-            }
-        }  
-        function check9() {
-            if (document.getElementById("infotext9").className == 'closebox') {
-                document.getElementById("infotext9").className = "infotext";
-            } else {
-                document.getElementById("infotext9").className = "closebox";
-            }
-        } 
-        function check10() {
-            if (document.getElementById("infotext10").className == 'closebox') {
-                document.getElementById("infotext10").className = "infotext";
-            } else {
-                document.getElementById("infotext10").className = "closebox";
+                nextid.className = "closebox";
             }
         } 
     </script>
