@@ -6,7 +6,7 @@
         height: 100vh;
         width: 100vw;
         grid-template-columns:minmax (50vw, 50vw); 
-        grid-template-rows: minmax(300px, 350px) repeat(10, minmax(400px, 50px));
+        grid-template-rows: minmax(300px, 350px) repeat(7, minmax(400px, 50px)) minmax(30px, 20px);
         gap: 5px;
         
     }
@@ -18,7 +18,7 @@
     }
     .item7 {
         grid-column: 1/3;
-        background-position: center center;
+        background-position: center top;
         transition: 0.2s;
     }
     .item8 {
@@ -35,5 +35,8 @@
         grid-column: 1/3;
         background-position: center center;
         transition: 0.2s;
+    }
+    .by {
+        grid-column: 1/3;
     }
 }

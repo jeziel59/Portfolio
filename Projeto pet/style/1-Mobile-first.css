@@ -1,5 +1,9 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@font-face {
+    font-family: titulo;
+    src: url(../font/Vanilla\ Caramel.otf);
+}
 *{
     margin: 0px;
     border: 0px;
@@ -7,6 +11,7 @@
 }
 body {
     background-color: black;
+
 }
 body::-webkit-scrollbar {
     display: none;
@@ -21,9 +26,17 @@ body::-webkit-scrollbar {
 
 }
 .head {
-    background-image: url();
+    background-image: url(../imagens/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.head > h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: titulo;
+    font-size: 2em;
+    margin-top: 50px;
+    text-shadow: 2px 2px 20px black;
 }
 .item1 {
     background-image: url(../imagens/beagle.jfif);
@@ -57,7 +70,7 @@ body::-webkit-scrollbar {
     background-position: center center;
 }
 .item7 {
-    background-image: url(../imagens/pastor.jpg);
+    background-image: url(../imagens/pastor1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -88,17 +101,30 @@ body::-webkit-scrollbar {
 }
 .infotext {
     display: block;
-    height: 250px;
+    height: 270px;
     width: 300px;
     background-color: white;
     border-radius: 20px;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     margin-left: 70px;
     margin-top: -50px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
 }
 .closebox {
     display: none;
+}
+.by {
+
+    color: rgb(255, 255, 255);
+    height: 25px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+.by a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dosis', sans-serif;
 }
 
 

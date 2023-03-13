@@ -160,7 +160,9 @@
         box-shadow: inset 0px 0px 100px 0px var(--black);
     }
     #item2 {
-        background-color: rgb(211, 211, 211);
+        background-image: url(../imagens/pet-phone.png);
+        border-radius: 5px 5px 0px 0px;
+        box-shadow: inset 0px 0px 100px 0px var(--black);
 
     }
     #item3 {
